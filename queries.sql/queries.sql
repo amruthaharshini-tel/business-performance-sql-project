@@ -23,6 +23,7 @@ GROUP BY country
 
 ORDER BY total_customers DESC;
 
+
 --- Lead Source Performance Analysis
 
 SELECT source, COUNT (source) AS source_efficiency
