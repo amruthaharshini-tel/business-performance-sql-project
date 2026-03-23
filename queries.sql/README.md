@@ -101,3 +101,23 @@ WHERE stock < 100
 ORDER BY stock
 
 
+7. Average Price by Product Category
+   
+##Explanation:
+
+This query calculates the average price for each product category, useful for pricing analysis.
+
+###Query:
+
+SELECT category, AVG (price) AS average_price
+
+FROM dbo.products
+
+GROUP BY Category
+
+ORDER BY average_price DESC;
+
+
+
+
+
