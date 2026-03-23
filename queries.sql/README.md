@@ -118,6 +118,26 @@ GROUP BY Category
 ORDER BY average_price DESC;
 
 
+8. Lead Source vs Deal Stage Analysis
+
+#Explanation:
+
+This query combines lead source and deal stage to evaluate which channels generate high-quality leads.
+
+##Query:
+
+SELECT Source, Deal_Stage,
+
+COUNT (*) AS total
+
+FROM dbo.leads
+
+GROUP BY Source, Deal_Stage
+
+ORDER BY total DESC;
+
+
+
 
 
 
