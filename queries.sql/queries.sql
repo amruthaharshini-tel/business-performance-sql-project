@@ -77,4 +77,15 @@ GROUP BY Category
 ORDER BY average_price DESC;
 
 
+--- Average Price by Product Category
+   
+SELECT category, AVG (price) AS average_price
+
+FROM dbo.products
+
+GROUP BY Category
+
+ORDER BY average_price DESC;
+
+
 
